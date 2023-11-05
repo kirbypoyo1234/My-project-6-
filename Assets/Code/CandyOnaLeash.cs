@@ -34,7 +34,7 @@ public class CandyOnaLeash : MonoBehaviour
         {
             if (shootTimer <= 0)
             {
-                shootTimer = shootInterval;
+                shootTimer = shootInterval * GameManager.attackSpeedMulitiplier;
                 Instantiate(Star, transform.position, Quaternion.identity);
             }
             
